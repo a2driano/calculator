@@ -18,18 +18,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
-	@Autowired
-	private CalcService calcService;
+    @Autowired
+    private CalcService calcService;
 
-	@RequestMapping(value="/")
-	public String start() {
-		return "main";
-	}
+    @RequestMapping(value = "/")
+    public String start() {
+        return "main";
+    }
 
-	@ResponseBody
-	@RequestMapping(value="/calc", method = RequestMethod.POST)
-	public CalcDTO calculate(@RequestBody CalcDTO calcDTO){
-		CalcDTO calcDTOresult=calcService.calculate(calcDTO);
-		return calcDTOresult;
-	}
+    @ResponseBody
+    @RequestMapping(value = "/calc", method = RequestMethod.POST)
+    public CalcDTO calculate(@RequestBody CalcDTO calcDTO) {
+        CalcDTO calcDTOresult = calcService.calculate(calcDTO);
+        return calcDTOresult;
+    }
 }

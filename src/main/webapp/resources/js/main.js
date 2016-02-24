@@ -10,7 +10,7 @@ var onStart = function () {
 function clickForm() {
     $('.result').html('');
     $('.alert').html('');
-    if ( $("#firstdigit").val()!=''&& $("#secondigit").val()!=''){
+    if ($("#firstdigit").val() != '' && $("#secondigit").val() != '') {
         var data = {
             firstdigit: $("#firstdigit").val(),
             secondigit: $("#secondigit").val(),
@@ -27,7 +27,7 @@ function clickForm() {
                     //alert message
                     $('#centralContainer').append('<div class="alert">' + calcDTO.message + '</div>');
                 }
-                else  {
+                else {
                     $('.result').text(calcDTO.result);
                 }
             },
@@ -40,7 +40,7 @@ function clickForm() {
 var addEvents = function () {
     //change operation on button click
     $(".operationButton").on('click', function () {
-        var oper=$(this).text();
+        var oper = $(this).text();
         $('.operationSelection').text(oper);
     });
 };

@@ -13,22 +13,22 @@ import org.springframework.stereotype.Service;
 public class CalcServiceImpl implements com.calculator.services.CalcService {
     @Override
     public CalcDTO calculate(CalcDTO calcDTO) {
-        CalcDTO calcDTOresult=new CalcDTO();
+        CalcDTO calcDTOresult = new CalcDTO();
 
         switch (calcDTO.getOperation()) {
             case "+":
-                calcDTOresult.setResult(calcDTO.getFirstdigit()+calcDTO.getSecondigit());
+                calcDTOresult.setResult(calcDTO.getFirstdigit() + calcDTO.getSecondigit());
                 break;
             case "-":
-                calcDTOresult.setResult(calcDTO.getFirstdigit()-calcDTO.getSecondigit());
+                calcDTOresult.setResult(calcDTO.getFirstdigit() - calcDTO.getSecondigit());
                 break;
             case "*":
-                calcDTOresult.setResult(calcDTO.getFirstdigit()*calcDTO.getSecondigit());
+                calcDTOresult.setResult(calcDTO.getFirstdigit() * calcDTO.getSecondigit());
                 break;
             case "/":
-                if(calcDTO.getSecondigit()!=0){
-                    calcDTOresult.setResult(calcDTO.getFirstdigit()/calcDTO.getSecondigit());
-                }else {
+                if (calcDTO.getSecondigit() != 0) {
+                    calcDTOresult.setResult(calcDTO.getFirstdigit() / calcDTO.getSecondigit());
+                } else {
                     calcDTOresult.setMessage("You can not divide by zero");
                 }
                 break;
