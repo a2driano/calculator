@@ -1,0 +1,131 @@
+.html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0%;
+}
+
+#central {
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0px;
+    background: linear-gradient(to top, #778ba5, #575757);
+}
+
+#centralContainer {
+    margin: auto;
+    width: 800px;
+    height: 100%;
+    background: linear-gradient(to top, #e3e3e3, #b8b8b8);
+}
+
+.result {
+    margin: 9px;
+    width: 265px;
+    height: 43px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12pt;
+    font-family: sans-serif;
+    line-height: 43px;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #9c9c9c;
+}
+
+#operatorSubmit {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30pt;
+    font-family: sans-serif;
+    color: white;
+    width: 50px;
+    height: 53px;
+    line-height: 53px;
+    background-color: #3b6eff;
+    border-radius: 5px;
+}
+
+#operatorSubmit:hover {
+    background-color: #1702ff;
+}
+
+.operationButton {
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 110px;
+    height: 53px;
+    line-height: 53px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30pt;
+    font-family: sans-serif;
+    color: #7f7f7f;
+    background: linear-gradient(to top, #acacac, #cdcdcd);
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #9c9c9c;
+}
+
+.operationButton:hover {
+    color: #7f7f7f;
+    background: linear-gradient(to top, #a6a6a6, #c4c4c4);
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #9c9c9c;
+}
+
+.text {
+    padding: 30px;
+    font-size: 35pt;
+    font-family: monospace;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+.formNumber {
+    text-align: center;
+    font-size: 12pt;
+    font-family: sans-serif;
+    padding: 5px;
+    margin: 10px;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.alert {
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 15pt;
+    font-family: sans-serif;
+    color: red;
+    text-align: center;
+}
+
+
+
+
+
